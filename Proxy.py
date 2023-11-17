@@ -13,9 +13,8 @@ def add_to_blacklist(ip_address):
             ip = txt_zeek.readline()
             if not ip:
                 break
-            add_to_blacklist(ip)
         txt_zeek.close()
-        time.sleep(60)
+        time.sleep(60)  
 
 
 
@@ -53,5 +52,8 @@ async def start_proxy(host, port):
 
 def start():
     host = "127.0.0.1"
-    port = 9982
+    port = 9980
+    print("Proxy start in " + host +":"+str(port))
     asyncio.run(start_proxy(host, port))
+
+    
