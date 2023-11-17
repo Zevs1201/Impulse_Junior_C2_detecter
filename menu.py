@@ -48,12 +48,12 @@ __/ /___     // / /  / /   //         ((___( (   //     //___) )   ((____       
 
 """)
 def main():
+    display_menu()
     global Analysis, Zeek, Proxy
     interface = input("enter the interface: ")
-    Analysis = Thread(target=run_analysis)
+    Proxy = Thread(target=(run_proxy()))
+    Analysis = Thread(target=run_analysis())
     Zeek = Thread(target=run_zeek(interface))
-    Proxy = Thread(target=run_proxy)
-    display_menu()
     Proxy.start()
     Zeek.start()
     Analysis.start()
