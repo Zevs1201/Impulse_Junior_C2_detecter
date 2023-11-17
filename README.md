@@ -44,5 +44,5 @@ git clone https://github.com/Zevs1201/Impulse_Junior_C2_detecter.git
 Запустите скрипт командой:
 
 ```
-sudo python3 menu.py
+sudo python3 ban_ip.py
 ```
