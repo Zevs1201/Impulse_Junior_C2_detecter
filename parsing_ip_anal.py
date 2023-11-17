@@ -63,6 +63,7 @@ def feodo_tracker():
         print(f"IP Address: {server.ip_address}")
 
 def PRIHOD_OT_ZEEK():
+    time.sleep(300)
     while True:
         txt_zeek = open('/home/ivan/Документы/КибХак/mai/ips.txt', 'r')
         while True:
